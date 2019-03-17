@@ -17,6 +17,7 @@
         border-color: $primaryColor;
         &:hover {
             background-color: $primaryColorLight;
+            border-color: $primaryColorLight;
         }
     }
 
@@ -48,24 +49,47 @@
             padding: 0 20px;
         }
     }
+
+
+
+    &--medium {
+        height: 32px;
+        line-height: 32px;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+
+        @include atMedium {
+            height: 44px;
+            line-height: 44px;
+            font-size: 1rem;
+            padding: 0 12px;
+        }
+    }
+
+
+    &--large {
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1rem;
+        margin-top: 48px;
+
+        @include atMedium {
+            height: 48px;
+            line-height: 48px;
+            font-size: 1.125rem;
+            margin-top: 64px;
+        }
+
+        @include atLarge {
+            height: 56px;
+            line-height: 56px;
+            font-size: 1.3125rem;
+            margin-top: 72px;
+        }
+    }
+
+    &--centered {
+        @extend %centered;
+    }
 }
-
-// &__button {
-//     width: 264px;
-//     height: 40px;
-//     line-height: 40px;
-//     font-size: 1rem;
-//     margin-top: 64px;
-//     margin: 48px auto 0;
-//     cursor: pointer;
-
-//     @include atMedium {
-//       line-height: 48px;
-//       font-size: 1.125rem;
-//       width: 288px;
-//       height: 48px;
-//     }
-//     &:hover {
-//       background-color: #f97541;
-//     }
-//   }
