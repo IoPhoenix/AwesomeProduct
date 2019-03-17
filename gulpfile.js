@@ -11,6 +11,7 @@ var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
         src: "./app/assets/styles/*.scss",
+        all: "./app/assets/styles/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "./app/temp/styles"
     },
@@ -50,7 +51,7 @@ function watch() {
             baseDir: "./app"
         }
     });
-    gulp.watch(paths.styles.src, style);
+    gulp.watch(paths.styles.all, style);
     gulp.watch(paths.html.src).on('change', reload);
 }
 
