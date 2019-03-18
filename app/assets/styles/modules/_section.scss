@@ -1,0 +1,30 @@
+section {
+    min-height: 100vh;
+    padding: 48px 0;
+    
+    @include atSmallest {
+        padding: 56px 0;
+    }
+
+    @include atSmall {
+        padding: 64px 0;
+    }
+    @include atMedium {
+        padding: 72px 0;
+    }
+
+    @include atLarge {
+        padding: 88px 0;
+    }
+}
+
+.spacer {
+    width: 100%;
+    height: 70px;
+
+    &--hidden-from-medium {
+        @include atMedium {
+            display: none;
+        }
+    }
+}

@@ -8,4 +8,10 @@
     flex-wrap: wrap;
     max-width: 1440px;
     z-index: 1;
+
+    @include atLarge {
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+
 }
