@@ -1,0 +1,13 @@
+header {
+    width: 100%;
+    position: absolute;
+    
+    svg {
+        width: 82px;
+        vertical-align: middle;
+
+        @include atLarge {
+            width: 122px;
+        }
+    }
+}
