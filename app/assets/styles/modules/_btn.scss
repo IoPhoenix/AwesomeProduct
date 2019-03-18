@@ -23,6 +23,10 @@
     &--secondary {
         background: $secondaryColor;
         border-color: $secondaryColor;
+        &:hover {
+            background-color: $secondaryColorLight;
+            border-color: $secondaryColorLight;
+        }
     }
 
     &--small {
