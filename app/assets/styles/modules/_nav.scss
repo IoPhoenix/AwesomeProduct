@@ -1,4 +1,4 @@
-nav {
+.navigation-panel {
     border: 2px solid green;
     width: 100%;
     font-size: 0.875rem;
@@ -13,18 +13,40 @@ nav {
 
     @include atMedium {
         font-size: 1.125rem;
+        padding: 24px 0;
     }
 
-    ul {
+    &__list {
         list-style: none;
         display: inline-block;
 
-        li {
-            display: inline;
+    }
 
-            a {
-                color: #fff;
+    &__left {
+        .navigation-panel__item {
+            @include atSmallest {
+                margin-right: 16px;
             }
+
+            @include atSmall {
+                margin-right: 20px;
+            }
+
+            @include atSmall {
+                margin-right: 24px;
+            }
+
+            @include atLarge {
+                margin-right: 32px;
+            }
+        }
+    }
+
+    &__item {
+        display: inline;
+
+        a {
+            color: #fff;
         }
     }
 }
