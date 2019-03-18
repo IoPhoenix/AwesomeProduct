@@ -7,20 +7,7 @@ header {
         width: 82px;
         vertical-align: middle;
 
-        @include atSmallest {
-            margin-right: 16px;
-        }
-
-        @include atSmall {
-            margin-right: 20px;
-        }
-
-        @include atSmall {
-            margin-right: 24px;
-        }
-
         @include atLarge {
-            margin-right: 32px;
             width: 122px;
         }
     }

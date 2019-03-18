@@ -108,6 +108,7 @@
 
     &--with-m-left {
         margin-left: 8px;
+
         @include atSmall {
             margin-left: 12px;
         }

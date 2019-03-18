@@ -44,9 +44,15 @@
 
     &__item {
         display: inline;
+        cursor: pointer;
 
+        
         a {
             color: #fff;
+
+            &:not(.btn):hover {
+                color: $lightGray;
+            }
         }
     }
 }
