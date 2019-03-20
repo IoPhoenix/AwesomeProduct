@@ -1,12 +1,8 @@
 header {
-    position: absolute;
     background-color: transparent;
     width: 100%;
+    position: relative;
 
-    @include atMedium {
-        position: relative;
-    }
-    
     svg {
         width: 82px;
         vertical-align: middle;
