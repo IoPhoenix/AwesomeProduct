@@ -3,6 +3,7 @@ section {
     position: relative;
 
     & .title {
+        color: $dark;
         font-family: $headingFont;
         flex: 0 0 100%;
         font-size: 1.5rem;
@@ -39,7 +40,7 @@ section {
         &--aligned-left {
             text-align: left;
             margin-left: 0;
-            
+
             @include atSmall {
                 margin-right: 100%;
             }
