@@ -14,4 +14,22 @@
         padding-left: 36px;
     }
 
+    &--with-padding {
+        padding-top: 16px;
+        max-width: 1440px;
+        padding-bottom: 64px;
+        
+        @include atSmall {
+            padding-bottom: 56px;
+            padding-top: 32px;
+        }
+
+        @include atMedium {
+            padding-bottom: 64px;
+        }
+
+        @include atLarge {
+            padding-bottom: 80px;
+        }
+    }
 }

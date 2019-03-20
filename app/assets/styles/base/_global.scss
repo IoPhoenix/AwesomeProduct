@@ -16,3 +16,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.hide-on-medium {
+    @include atMedium {
+        display: none;
+    }
+}
+
+.show-on-medium {
+    @include atMedium {
+        display: block;
+    }
+}

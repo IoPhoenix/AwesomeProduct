@@ -62,12 +62,15 @@
         line-height: 32px;
         font-size: 0.875rem;
         letter-spacing: 1px;
+        width: 126px;
+        
 
         @include atMedium {
             height: 44px;
             line-height: 44px;
             font-size: 1rem;
             padding: 0 12px;
+            width: 176px;
         }
     }
 
@@ -114,6 +117,18 @@
         }
         @include atMedium {
             margin-left: 16px;
+        }
+    }
+
+    &--with-m-top {
+        margin-top: 24px;
+
+        @include atMedium {
+            margin-top: 40px;
+        }
+
+        @include atLarge {
+            margin-top: 56px;
         }
     }
 }
