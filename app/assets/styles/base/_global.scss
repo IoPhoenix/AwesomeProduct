@@ -17,6 +17,13 @@ img {
     height: auto;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $secondaryColor;
+    -webkit-tap-highlight-color: primaryColorLight;
+}
+
 .hide-on-medium {
     @include atMedium {
         display: none;

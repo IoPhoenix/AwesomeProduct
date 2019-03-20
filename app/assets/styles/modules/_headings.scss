@@ -1,0 +1,70 @@
+.title {
+    color: $dark;
+    font-family: $headingFont;
+    flex: 0 0 100%;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-align: center;
+    @extend %centered;
+
+    @include atSmallest {
+        flex: 0 0 83.33333%;
+        font-size: 1.75rem;
+    }
+
+    @include atSmall {
+        flex: 0 0 50%;
+    }
+
+    @include atMedium {
+        letter-spacing: 0px;
+        font-size: 2.125rem;
+    }
+
+    @include atLarge {
+        flex: 0 0 45%;
+        letter-spacing: -2px;
+        font-size: 2.75rem;
+    }
+
+    &--light {
+        color: #fff;
+    }
+
+    &--aligned-left {
+        text-align: left;
+        margin-left: 0;
+
+        @include atSmall {
+            margin-right: 100%;
+        }
+    }
+    &--with-line {
+        &:before {
+            @extend %centered;
+            content: '';
+            background: $secondaryColor;
+            height: 4px;
+            display: block;
+            width: calc(100% * 0.16);
+            margin-bottom: 10px;
+            
+            @include atMedium {
+                width: calc(100% * 0.08);
+            }
+        }
+    }
+
+    &--with-mb {
+        margin-bottom: 32px;
+    
+        @include atMedium {
+            margin-bottom: 64px;
+        }
+        @include atLarge {
+            margin-bottom: 72px;
+        }
+    }
+}
