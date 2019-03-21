@@ -95,11 +95,16 @@ section {
 
 .features {
     &__list {
+        border: 2px solid blue;
+        margin: 0 auto;
+        max-width: 272px;
+
         @extend %flexwrap;
         list-style: none;
 
         @include atSmall {
             justify-content: space-between;
+            max-width: initial;
         }
         @include atLarge {
             justify-content: space-around;
