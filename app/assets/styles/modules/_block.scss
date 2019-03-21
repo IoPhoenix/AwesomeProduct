@@ -16,6 +16,9 @@
     }
   
     @include atMedium {
+      &--one-third {
+        flex: 0 0 calc(33.33333% - 12px);
+      }
       flex: 0 0 calc(25% - 12px);
       justify-content: center;
       margin: 0 6px;
@@ -171,8 +174,8 @@
       margin-bottom: 8px;
       color: #2a3843;
 
-      @include atMedium {
-        font-weight: 500;
+      &--left-aligned {
+        text-align: left;
       }
     }
   
@@ -184,7 +187,8 @@
     }
 
     &__link {
-      margin: 16px auto 0 auto;
+      text-align: left;
+      margin-top: 16px;
       max-width: 320px;
       display: block;
       text-transform: uppercase;

@@ -92,3 +92,17 @@ section {
         z-index: -1;
     }
 }
+
+.features {
+    &__list {
+        @extend %flexwrap;
+        list-style: none;
+
+        @include atSmall {
+            justify-content: space-between;
+        }
+        @include atLarge {
+            justify-content: space-around;
+        }
+    }
+}
