@@ -1,6 +1,6 @@
 .block {
     @extend %flexwrap;
-    // border: 1px solid red;
+    border: 1px solid red;
     position: relative;
     flex: 0 0 75%;
     margin: 0 6px;
@@ -16,13 +16,21 @@
     }
   
     @include atMedium {
-      &--one-third {
-        flex: 0 0 calc(33.33333% - 12px);
-      }
       flex: 0 0 calc(25% - 12px);
       justify-content: center;
       margin: 0 6px;
     }
+
+    &--one-third {
+      @include atMedium {
+        flex: 0 0 calc(33.33333% - 12px);
+      }
+
+      @include atLarge {
+        flex: 0 0 25%;
+      }
+    }
+
   
     &:not(:last-of-type) {
       margin-bottom: 40px;
@@ -42,7 +50,7 @@
     &__icon {
       // border: 1px solid rgb(245, 245, 240);
       @extend %centered;
-      width: 140px;
+      width: 144px;
       height: auto;
       
       @include atSmallest {
@@ -64,6 +72,13 @@
       }
   
       @include atLarge {
+        // width: 100%;
+        // height: auto;
+        width: 144px;
+        height: 144px;
+      }
+
+      & svg {
         width: 100%;
         height: auto;
       }
@@ -182,7 +197,7 @@
 
     &__description {
       line-height: 1.75;
-      color: #b2bec8;
+      color: #637787;
       font-weight: 300;
     }
 
@@ -194,6 +209,10 @@
       text-transform: uppercase;
       white-space: nowrap;
       font-weight: 300;
+
+      svg {
+        margin-left: 8px;
+      }
     }
 
     &--dark {
