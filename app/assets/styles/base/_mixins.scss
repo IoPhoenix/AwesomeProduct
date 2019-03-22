@@ -10,6 +10,12 @@
     }
 }
 
+@mixin atMediumSmall {
+  @media (min-width: #{$tablet-small-width}) {
+    @content;
+  }
+}
+
 @mixin atMedium {
   @media (min-width: #{$tablet-width}) {
     @content;

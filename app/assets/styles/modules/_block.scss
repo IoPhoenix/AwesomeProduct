@@ -35,6 +35,10 @@
         flex: 0 0 100%;
       }
 
+      @include atMediumSmall {
+        justify-content: space-evenly;
+      }
+
       @include atMedium {
         flex: 0 0 calc(33.33333% - 12px);
         margin: 0 6px;
@@ -74,6 +78,10 @@
           max-width: initial;
           margin: 0;
           flex: 0 0 58.33333%;
+        }
+
+        @include atMediumSmall {
+          flex: 0 0 50%;
         }
 
         @include atMedium {

@@ -35,6 +35,11 @@
 
     &--thin {
         font-family: $mainFont;
+
+        @include atSmallest {
+            flex: 0 0 100%;
+            font-size: 1.5rem;
+        }
     }
 
     &--aligned-left {
