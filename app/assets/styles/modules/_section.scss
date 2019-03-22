@@ -28,21 +28,6 @@ section {
             max-width: 470px;
         }
     }
-    
-    // @include atSmallest {
-    //     padding: 56px 0;
-    // }
-
-    // @include atSmall {
-    //     padding: 64px 0;
-    // }
-    // @include atMedium {
-    //     padding: 72px 0;
-    // }
-
-    // @include atLarge {
-    //     padding: 88px 0;
-    // }
 }
 
 
@@ -95,7 +80,7 @@ section {
 
 .features {
     &__list {
-        border: 2px solid blue;
+        // border: 2px solid blue;
         margin: 0 auto;
         max-width: 272px;
 
@@ -110,4 +95,23 @@ section {
             justify-content: space-around;
         }
     }
+}
+
+.services {
+    min-height: 100vh;
+
+    &__list {
+      @extend %flexwrap;
+      list-style: none;
+      justify-content: flex-end;
+
+      @include atMedium {
+        justify-content: space-between;
+      }
+    }
+}
+
+
+.customers {
+
 }

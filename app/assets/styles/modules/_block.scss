@@ -21,8 +21,12 @@
       margin: 0 6px;
     }
 
-    &:nth-of-type(even) {
+    &--reversed {
       flex-direction: row-reverse;
+    }
+
+    &--single {
+      
     }
 
     &--one-third  {
