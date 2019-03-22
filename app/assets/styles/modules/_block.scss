@@ -21,17 +21,11 @@
       margin: 0 6px;
     }
 
-    &--one-third {
-      @include atMedium {
-        flex: 0 0 calc(33.33333% - 12px);
-      }
-
-      @include atLarge {
-        flex: 0 0 25%;
-      }
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
     }
 
-    &--full-width {
+    &--one-third  {
       flex: unset;
       margin: 0;
 
@@ -45,7 +39,6 @@
         flex: 0 0 calc(33.33333% - 12px);
         margin: 0 6px;
         justify-content: center;
-        align-items: flex-start;
       }
 
       @include atLarge {
