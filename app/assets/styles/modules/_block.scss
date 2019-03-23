@@ -5,16 +5,17 @@
     flex: 0 0 75%;
     margin: 0 6px;
     z-index: 1;
+    justify-content: center;
   
     @include atSmallest {
       flex: 0 0 100%;
       justify-content: space-between;
     }
   
-    @include atSmall {
-      justify-content: center;
+    @include atMediumSmall {
+      justify-content: space-evenly;
     }
-  
+
     @include atMedium {
       flex: 0 0 calc(25% - 12px);
       justify-content: center;
@@ -26,7 +27,19 @@
     }
 
     &--single {
+      margin: 0 auto;
+      max-width: 320px;
+
+      @include atLarge {
+        max-width: 360px;
+      }
       
+      & .block__text {
+        margin: 0;
+        max-width: inherit;
+        flex: unset;
+      }
+
     }
 
     &--one-third  {
@@ -34,19 +47,13 @@
       margin: 0;
 
       @include atSmallest {
-        justify-content: space-between;
         align-items: center;
         flex: 0 0 100%;
-      }
-
-      @include atMediumSmall {
-        justify-content: space-evenly;
       }
 
       @include atMedium {
         flex: 0 0 calc(33.33333% - 12px);
         margin: 0 6px;
-        justify-content: center;
       }
 
       @include atLarge {
@@ -104,7 +111,7 @@
       }
     }
     &:first-child .block__bullet::before {
-        display: none;
+      display: none;
     }
     &:last-child .block__bullet::after {
       display: none;
@@ -113,13 +120,9 @@
 
 
     &__icon {
-      // border: 1px solid rgb(245, 245, 240);
-      @extend %centered;
-      width: 144px;
-      height: 144px;
+      border: 2px solid rgb(245, 245, 240);
       
       @include atSmallest {
-        width: 200px;
         flex: 0 0 calc(33.33333% - 24px);
         margin: 0 12px;
         display: flex;
@@ -137,22 +140,9 @@
       }
   
       @include atLarge {
-        // width: 100%;
-        // height: auto;
-        width: 144px;
-        height: 144px;
-      }
-
-      & svg {
-        width: 100%;
-        height: auto;
       }
 
       &--with-mb {
-        @include atSmallest {
-          margin-bottom: 70px;
-        }
-
         @include atMedium {
           margin-bottom: 80px;
         }
@@ -163,7 +153,7 @@
   
     &__bullet {
       position: absolute;
-      top: 100px;
+      top: 72px;
       bottom: 0;
       left: -48px;
       border-radius: 50%;
@@ -181,9 +171,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        top: 224px;
-        width: 16px;
-        height: 16px;
+        top: 176px;
       }
   
       &:after {
@@ -194,6 +182,10 @@
         bottom: -240px;
         width: 2px;
   
+        @include atSmallest {
+          bottom: -187px;
+        }
+
         @include atMedium {
           height: 2px;
           left: 50%;
@@ -211,10 +203,11 @@
         left: 0;
         bottom: 50%;
         width: 2px;
-  
+
         @include atSmallest {
-          top: -140px;
+          top: -187px;
         }
+  
         @include atMedium {
           height: 2px;
           top: 0;

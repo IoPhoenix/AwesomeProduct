@@ -6,7 +6,6 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    //max-width: 1440px;
     z-index: 1;
 
     @include atLarge {
@@ -31,5 +30,9 @@
         @include atLarge {
             padding-bottom: 80px;
         }
+    }
+
+    &--no-flex {
+        display: block;
     }
 }
