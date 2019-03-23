@@ -62,12 +62,13 @@
       }
 
       & .block__icon {
+        @extend %centered;
         border: 1px solid red;
-        margin: 0 auto;
         width: 144px;
 
         @include atSmallest {
           flex: none;
+          height: 144px;
         }
 
         @include atSmall {
@@ -76,7 +77,14 @@
         }
 
         @include atMedium {
-          width: 120px;
+          width: 144px;
+          height: 144px;
+          margin-bottom: 24px;
+        }
+
+        & svg {
+          width: 100%;
+          height: auto;
         }
       }
 
@@ -106,6 +114,7 @@
   
     &:not(:last-of-type) {
       margin-bottom: 40px;
+
       @include atMedium {
         margin-bottom: 0;
       }
@@ -138,11 +147,12 @@
         justify-content: center;
         width: 144px;
       }
-  
-      @include atLarge {
-      }
 
       &--with-mb {
+        margin-bottom: 24px;
+      }
+
+      &--with-mb-at-medium {
         @include atMedium {
           margin-bottom: 80px;
         }
