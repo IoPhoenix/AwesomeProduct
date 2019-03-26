@@ -1,0 +1,23 @@
+@keyframes fadeIn { 
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+@keyframes contentFirstLoad { 
+    0% {
+        transform: translateY(48px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% { 
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

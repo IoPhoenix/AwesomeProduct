@@ -1,5 +1,4 @@
 section {
-    // min-height: 100vh;
     position: relative;
 
 
@@ -77,6 +76,115 @@ section {
         z-index: -1;
     }
 }
+
+
+.demo {
+    &__wrapper {
+        animation: fadeIn 114.28571ms forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+        width: 238px;
+        height: 158.66667px;
+        position: absolute;
+        right: 8px;
+        bottom: 172px;
+        opacity: 0;
+        z-index: 1;
+
+        @include atSmall {
+            width: 272px;
+            height: 181.33333px;
+            right: 0;
+            bottom: 118px;
+            left: 53%;
+        }
+
+        @include atMediumSmall {
+            width: 348px;
+            height: 232px;
+            bottom: 72px;
+            left: 51%;
+        }
+
+        @include atMedium {
+            width: 468px;
+            height: 312px;
+            bottom: 24px;
+            left: 46%;
+        }
+
+        @include atLarge {
+            width: 620px;
+            height: 413.33333px;
+            bottom: 32px;
+            left: 49%;
+        }
+    }
+
+    &__link {
+        animation: contentFirstLoad 400ms forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        margin: 0 auto;
+        box-shadow: 0 6px 30px rgba(15,21,26,0.2);
+        height: 100%;
+        overflow: hidden;
+
+        &:before {
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            background-color: #f00;
+            content: "";
+        }
+
+        &:after {
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            background-color: #f00;
+            content: "";
+        }
+    }
+
+    &__sale {
+        animation: fadeIn 200ms forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: absolute;
+        transform: translateX(50%);
+        opacity: 0;
+        z-index: 1;
+        height: 100%;
+    }
+
+    &__logo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(32%, 32%) scale(0.34);
+        opacity: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 
 .features {
     &__list {
