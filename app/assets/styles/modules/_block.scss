@@ -39,7 +39,10 @@
         max-width: inherit;
         flex: unset;
       }
+    }
 
+    &--block--half {
+      flex: 0 0 50%;
     }
 
     &--one-third  {

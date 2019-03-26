@@ -13,6 +13,10 @@
         padding-left: 36px;
     }
 
+    &--no-padding {
+        padding: 0;
+    }
+    
     &--with-padding {
         padding-top: 16px;
         max-width: 1440px;

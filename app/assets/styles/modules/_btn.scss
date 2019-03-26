@@ -99,6 +99,7 @@
 
     &--centered {
         @extend %centered;
+        display: inline-block;
     }
 
     &--light {
