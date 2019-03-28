@@ -21,3 +21,12 @@
         transform: translateY(0);
     }
 }
+
+@keyframes rotateLogos {
+    from { 
+        transform: rotate(-16deg);
+    }
+    to { 
+        transform: rotate(-376deg);
+    }
+}

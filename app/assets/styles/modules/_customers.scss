@@ -1,0 +1,52 @@
+.customers {
+    padding: 48px 0;
+    background-color: #fafafa;
+    
+    @include atSmallest {
+        padding: 56px 0;
+    }
+    
+    @include atSmall {
+        padding: 64px 0;
+    }
+    
+    @include atSmallMedium {
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    @include atMedium {
+        padding: 72px 0;
+    }
+
+    @include atLarge {
+        padding: 128px 0;
+    }
+
+    &__wrapper {
+        animation: rotateLogos 325s linear infinite;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: -48px;
+
+        @include atSmallMedium {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            bottom: -100%;
+            left: -100%;
+            transform: rotate(-16deg);
+            z-index: -1;
+            margin-top: 0;
+        }
+    }
+
+    &__logos {
+        position: relative;
+        flex-shrink: 0;
+        transition: transform 0.25s ease-in-out;
+        margin: 0 auto;
+        width: 1556px;
+        height: 336px;
+    }
+}
