@@ -1,5 +1,5 @@
 .customers {
-    min-height: 100vh;
+    min-height: 60vh;
     border: 2px solid blue;
     padding: 48px 0;
     background-color: #fafafa;
@@ -108,13 +108,93 @@
             }
 
             &:nth-of-type(1) {
-                animation: logoDrift1 18s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+                // animation: logoDrift1 18s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 9%;
                 left: 6%;
 
                 @include atMediumSmall {
                     top: 6.5%;
                     left: 38.5%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                top: 47.5%;
+                left: 13%;
+
+                @include atMediumSmall {
+                    top: 20%;
+                    left: 18%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                top: 10%;
+                left: 24%;
+
+                @include atMediumSmall {
+                    top: 49.5%;
+                    left: 12%;
+                }
+            }
+
+            &:nth-of-type(4) {
+                top: 52.5%;
+                left: 30%;
+
+                @include atMediumSmall {
+                    top: 70.5%;
+                    left: 16%;
+                }
+            }
+
+            &:nth-of-type(5) {
+                top: 21.5%;
+                left: 44%;
+
+                @include atMediumSmall {
+                    top: 75.5%;
+                    left: 38.5%;
+                }
+            }
+
+            &:nth-of-type(6) {
+                top: 53.5%;
+                left: 58%;
+
+                @include atMediumSmall {
+                    top: 79.5%;
+                    left: 64.5%;
+                }
+            }
+
+            &:nth-of-type(7) {
+                top: 11%;
+                left: 68.5%;
+
+                @include atMediumSmall {
+                    top: 58%;
+                    left: 73.5%;
+                }
+            }
+
+            &:nth-of-type(8) {
+                top: 52.5%;
+                left: 75%;
+
+                @include atMediumSmall {
+                    top: 33.5%;
+                    left: 81.5%;
+                }
+            }
+
+            &:nth-of-type(9) {
+                top: 20.5%;
+                left: 89.5%;
+
+                @include atMediumSmall {
+                    top: 18.5%;
+                    left: 64.5%;
                 }
             }
         }

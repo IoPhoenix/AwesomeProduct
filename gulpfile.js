@@ -68,5 +68,5 @@ var build = gulp.parallel(style, watch);
 /* You can still use `gulp.task` to expose tasks */
 gulp.task('build', build);
  
-// /* Define default task that can be called by just running `gulp` from cli */
+/* Define default task that can be called by just running `gulp` from cli */
 gulp.task('default', build);
