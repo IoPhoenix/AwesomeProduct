@@ -26,12 +26,13 @@
     }
 
     &__wrapper {
-        animation: rotateLogos 325s linear infinite;
+        animation: scrollLogos 120s linear infinite;
         display: flex;
         flex-wrap: nowrap;
         margin-top: -48px;
-
+        
         @include atMediumSmall {
+            animation: rotateLogos 325s linear infinite;
             position: absolute;
             top: -100%;
             right: -100%;
@@ -443,15 +444,15 @@
 
     &__logo-shadow {
         background-image: url(https://assets.imgix.net/logos/mobile-logo-shadow-large.png?q=70&w=158&fm=png8);
-        animation: keepLogosUpright 325s linear infinite;    
         display: flex;
         align-items: center;
         justify-content: center;
         background-size: 100%;
         width: 100%;
         height: 100%;
-
+        
         @include atMediumSmall {
+            animation: keepLogosUpright 325s linear infinite;    
             background-image: url(https://assets.imgix.net/logos/desktop-logo-shadow-large.png?q=70&w=200&fm=png8);
             transform: rotate(16deg);
         }
