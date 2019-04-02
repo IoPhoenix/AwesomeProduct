@@ -339,9 +339,9 @@
                 width: 184px;
                 height: 184px;
             }
-
+        
             &:nth-of-type(1) {
-                // animation: logoDrift1 18s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+                animation: logoDrift1 18s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 9%;
                 left: 6%;
 
@@ -352,6 +352,7 @@
             }
 
             &:nth-of-type(2) {
+                animation: logoDrift2 17s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 47.5%;
                 left: 13%;
 
@@ -362,6 +363,7 @@
             }
 
             &:nth-of-type(3) {
+                animation: logoDrift3 17s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 10%;
                 left: 24%;
 
@@ -372,6 +374,7 @@
             }
 
             &:nth-of-type(4) {
+                animation: logoDrift2 17s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 52.5%;
                 left: 30%;
 
@@ -382,6 +385,7 @@
             }
 
             &:nth-of-type(5) {
+                animation: logoDrift4 19s 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 21.5%;
                 left: 44%;
 
@@ -392,6 +396,7 @@
             }
 
             &:nth-of-type(6) {
+                animation: logoDrift1 23s 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 53.5%;
                 left: 58%;
 
@@ -402,6 +407,7 @@
             }
 
             &:nth-of-type(7) {
+                animation: logoDrift2 21s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 11%;
                 left: 68.5%;
 
@@ -412,6 +418,7 @@
             }
 
             &:nth-of-type(8) {
+                animation: logoDrift3 22s 0.18s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 52.5%;
                 left: 75%;
 
@@ -422,6 +429,7 @@
             }
 
             &:nth-of-type(9) {
+                animation: logoDrift4 19s 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
                 top: 20.5%;
                 left: 89.5%;
 
