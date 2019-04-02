@@ -245,6 +245,9 @@
       }
      
       @include atMedium {
+        &--without-padding-at-medium {
+          padding: 0;
+        }
         padding: 0 16px;
         max-width: initial;
         flex: 0 0 100%;
@@ -262,6 +265,49 @@
 
       &--left-aligned {
         text-align: left;
+      }
+
+      &--with-mb {
+        margin-bottom: 24px;
+
+        @include atMedium {
+          margin-bottom: 32px;
+        }
+      }
+
+      &--with-line {
+        &:before {
+          width: 32%;
+          display: block;
+          margin-right: auto;
+          margin-bottom: 8px;
+          margin-left: auto;
+          background: $secondaryColor;
+          height: 2px;
+          content: '';
+
+          @include atSmall {
+            height: 4px;
+          }
+        }
+      }
+
+      &--bold {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.25;
+
+        @include atSmall {
+          font-size: 1.75rem;
+        }
+
+        @include atMedium {
+          font-size: 34px;
+        }
+
+        @include atLarge {
+          font-size: 44px;
+        }
       }
     }
   
