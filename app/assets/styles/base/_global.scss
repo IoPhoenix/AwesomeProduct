@@ -42,6 +42,10 @@ a {
     }
 }
 
+.bg-white {
+    background-color: #ffff;
+}
+
 .bg-gray {
     background-color: #fafafa;
 }
@@ -50,7 +54,18 @@ a {
     background-color: $darkGray;
 }
 
-
 .bg-blue {
     background: $secondaryColor;
-  }
+}
+
+[data-color='white'] {
+    color: #fff;
+}
+
+[data-color='invert-bg-shade'] {
+    color: #0f151a;
+}
+
+[data-color='invert-chrome-tint'] {
+    color: #7d90a0;
+}

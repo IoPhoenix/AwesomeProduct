@@ -1,0 +1,67 @@
+.module {
+    @extend %flexwrap;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+
+    &__wrapper {
+        @extend %flexwrap;
+        padding-right: 0;
+        padding-left: 0;
+        justify-content: center;
+        margin: 0 0;
+        flex: 0 0 100%;
+        position: relative;
+
+        @include atSmall {
+            flex: 0 0 50%;
+        }
+    }
+
+    &__content {
+        flex: 0 0 calc( 83.33333% - 24px);
+        margin: 0 12px;
+        padding: 48px 0;
+        max-width: 336px;
+        text-align: center;
+
+        @include atLarge {
+            max-width: 384px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+
+        @include atLarge {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        @extend %centered;
+        margin-bottom: 24px;
+        max-width: 280px;
+        line-height: 1.75;
+
+        @include atMedium {
+            max-width: initial;
+        }
+
+        @include atLarge {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 8px 16px;
+        min-width: 120px;
+        max-width: max-content;
+        font-weight: 700;
+    }
+}
