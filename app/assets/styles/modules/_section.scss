@@ -212,7 +212,7 @@ section {
       list-style: none;
       justify-content: flex-end;
 
-      @include atMedium {
+      @include atMediumSmall {
         justify-content: space-between;
       }
     }

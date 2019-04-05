@@ -14,12 +14,12 @@
   
     @include atMediumSmall {
       justify-content: space-evenly;
+      flex: 0 0 calc( 25% - 12px);
+      margin: 0 6px;
     }
 
     @include atMedium {
-      flex: 0 0 calc(25% - 12px);
       justify-content: center;
-      margin: 0 6px;
     }
 
     &--reversed {
@@ -116,9 +116,9 @@
 
   
     &:not(:last-of-type) {
-      margin-bottom: 40px;
+      margin-bottom: 64px;
 
-      @include atMedium {
+      @include atMediumSmall {
         margin-bottom: 0;
       }
     }
@@ -251,7 +251,7 @@
         top: 50%;
         right: 0;
         left: 0;
-        bottom: -240px;
+        bottom: -192px;
         width: 2px;
   
         @include atSmallest {
@@ -270,7 +270,7 @@
   
       &:before {
         @extend %prefix;
-        top: -240px;
+        top: -192px;
         right: 0;
         left: 0;
         bottom: 50%;
@@ -303,13 +303,17 @@
         align-self: center;
       }
      
-      @include atMedium {
+      @include atMediumSmall {
         &--without-padding-at-medium {
           padding: 0;
         }
-        padding: 0 16px;
-        max-width: initial;
+        max-width: 266px;
         flex: 0 0 100%;
+      }
+
+      @include atLargest {
+        margin: 0 16px;
+        max-width: initial;
       }
     }
   
