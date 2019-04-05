@@ -159,7 +159,7 @@
         height: 144px;
       }
 
-      @include atLarge {
+      @include atLargest {
         width: 192px;
         height: 192px;
       }
@@ -210,7 +210,7 @@
   
     &__bullet {
       position: absolute;
-      top: 72px;
+      top: 64px;
       bottom: 0;
       left: -48px;
       border-radius: 50%;
@@ -223,12 +223,27 @@
         left: 0;
         margin: 0 auto;
       }
-  
-      @include atMedium {
+
+      @include atSmall {
+        right: 21%;
+        width: 16px;
+        height: 16px;
+      }
+
+      @include atMediumSmall {
+        top: 144px;
         right: 0;
         bottom: 0;
         left: 0;
+        margin: 0 auto;
+        width: 8px;
+        height: 8px;
+      }
+
+      @include atMedium {
         top: 176px;
+        width: 12px;
+        height: 12px;
       }
   
       &:after {

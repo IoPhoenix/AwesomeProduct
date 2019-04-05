@@ -24,10 +24,11 @@
     }
 
     @include atLarge {
-        flex: 0 0 45%;
+        flex: 0 0 55%;
         letter-spacing: -2px;
         font-size: 2.75rem;
     }
+    
 
     &--light {
         color: #fff;

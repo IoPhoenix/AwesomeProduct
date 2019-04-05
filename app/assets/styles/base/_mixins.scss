@@ -1,33 +1,38 @@
 @mixin atSmallest {
-    @media (min-width: #{$mobile-small-width}) {
+    @media (min-width: #{$smallest-width}) {
       @content;
     }
   }
 
 @mixin atSmall {
-    @media (min-width: #{$mobile-large-width}) {
+    @media (min-width: #{$small-width}) {
       @content;
     }
 }
 
 @mixin atMediumSmall {
-  @media (min-width: #{$tablet-small-width}) {
+  @media (min-width: #{$medium-small-width}) {
     @content;
   }
 }
 
 @mixin atMedium {
-  @media (min-width: #{$tablet-width}) {
+  @media (min-width: #{$medium-width}) {
     @content;
   }
 }
 
 @mixin atLarge {
-  @media (min-width: #{$desktop-width}) {
+  @media (min-width: #{$large-width}) {
     @content;
   }
 }
 
+@mixin atLargest {
+  @media (min-width: #{$largest-width}) {
+    @content;
+  }
+}
 
 %prefix {
   position: absolute;
