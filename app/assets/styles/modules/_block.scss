@@ -1,6 +1,6 @@
 .block {
     @extend %flexwrap;
-    border: 1px solid red;
+    // border: 1px solid red;
     position: relative;
     flex: 0 0 75%;
     margin: 0 6px;
@@ -132,7 +132,7 @@
 
 
     &__icon {
-      border: 2px solid rgb(245, 245, 240);
+      // border: 2px solid rgb(245, 245, 240);
       
       @include atSmallest {
         flex: 0 0 calc(33.33333% - 24px);
@@ -146,9 +146,22 @@
         justify-content: flex-start;
       }
   
+      @include atMediumSmall {
+        position: static;
+        margin-bottom: 80px;
+        width: 96px;
+        height: 96px;
+      }
+
       @include atMedium {
         justify-content: center;
         width: 144px;
+        height: 144px;
+      }
+
+      @include atLarge {
+        width: 192px;
+        height: 192px;
       }
 
       &--with-mb {
@@ -160,9 +173,40 @@
           margin-bottom: 80px;
         }
       }
+
+      &>svg {
+        @include atMediumSmall {
+          width: auto;
+          height: 100%;
+        }
+      }
     }
 
+    &__arrow {
+      position: absolute;
+      right: 50%;
+      bottom: -32px;
+      left: 50%;
+      transform: rotate(90deg);
 
+      @include atMediumSmall {
+        top: 12%;
+        right: 0;
+        left: 100%;
+        transform: rotate(0);
+        width: 16px;
+        height: auto;
+      }
+
+      @include atMedium {
+        top: 18%;
+        width: 20px;
+      }
+
+      @include atLarge {
+        top: 20%;
+      }
+    }
   
     &__bullet {
       position: absolute;
